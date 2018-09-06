@@ -9,4 +9,6 @@ Assignment 1 has NO .css with the file linked.
 Assignment 2 does have css with it.
 This is still under construction.
 =================================
-Further info will follow.
+The file "main.css" will not be used anymore.
+The new .css file is custom.css and is linked with Assignment_2.html.
+custom.css will be edited  with SASS and the name for the SASS file is: "custom.scss".
