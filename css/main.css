@@ -83,22 +83,12 @@ body {
 :focus{
 	outline:none;
 }
-.radio{
-	-webkit-appearance: button;
-	-moz-appearance: button;
-	appearance: button;
-	border: 4px solid #ccc;
-	border-top-color: #bbb;
-	border-left-color: #bbb;
-	background: #fff;
+
+.box-around-checkbox {
 	width: 200px;
 	height: 200px;
-	border-radius: 10px;
+	border-color: red;
+	background-color: black;
+	border-radius: 15px;
 	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.radio:checked{
-	border:50px solid #81F7F3;
-	border-radius: 50px;
 }

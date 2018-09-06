@@ -1,0 +1,112 @@
+$black: #000000;
+$sky-blue: #81F7F3;
+$cyan: #04B4AE;
+$white: #FFFFFF;
+$dark-green: #4CAF50;
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+body {
+	font-family: Product Sans;
+}
+
+.body {
+	background-color: $sky-blue;
+	margin: 100px;
+}
+
+.inner {
+  .inner__text {
+    text-align: center;
+  	color: $black;
+  	font-weight: bold;
+  	margin: 15px;
+  }
+
+	background-color: $white;
+	-moz-box-shadow: 0 0 10px $black;
+	-webkit-box-shadow: 0 0 10px $black;
+	box-shadow: 0 0 10px $black;
+}
+
+.nav {
+  .nav__ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: $white;
+  }
+
+  .nav__li {
+    .nav__li--left {
+    	float: left;
+    }
+
+  	display: inline-block;
+  	color: $cyan;
+  	float: right;
+  }
+
+	background-color: $white;
+
+
+  .nav__li .nav__a {
+    .nav__li .nav__a:hover:not(.active) {
+    	background-color: gray;
+    	color: $white;
+    }
+
+  	display: block;
+  	color: $sky-blue;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  }
+}
+
+.active {
+	background-color: $dark-green;
+}
+
+/* Change radio button size */
+.form {
+    margin-left: auto;
+    margin-right: auto;
+  .box-around-checkbox {
+  	width: 200px;
+  	height: 200px;
+  	border-color: $black;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    background-color: $sky-blue;
+  	border-radius: 15px;
+  	display: inline-block;
+  }
+
+  .form__checkbox {
+    float: right;
+    border: $sky-blue;
+  }
+
+  .form__checkbox--lol {
+    border: $sky-blue;
+    height: 200px;
+    width: 200px;
+  }
+
+  .form__label {
+    color: $white;
+  }
+
+  .form__icon {
+    color: $black;
+  }
+}

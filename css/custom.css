@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
+}
+body {
+  font-family: Product Sans;
+}
+
+.body {
+  background-color: #81F7F3;
+  margin: 100px;
+}
+
+.inner {
+  background-color: #FFFFFF;
+  -moz-box-shadow: 0 0 10px #000000;
+  -webkit-box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 10px #000000;
+}
+.inner .inner__text {
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.nav {
+  background-color: #FFFFFF;
+}
+.nav .nav__ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.nav .nav__li {
+  display: inline-block;
+  color: #04B4AE;
+  float: right;
+}
+.nav .nav__li .nav__li--left {
+  float: left;
+}
+.nav .nav__li .nav__a {
+  display: block;
+  color: #81F7F3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav .nav__li .nav__a .nav__li .nav__a:hover:not(.active) {
+  background-color: gray;
+  color: #FFFFFF;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/* Change radio button size */
+.form {
+  margin-left: auto;
+  margin-right: auto;
+}
+.form .box-around-checkbox {
+  width: 200px;
+  height: 200px;
+  border-color: #000000;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  background-color: #81F7F3;
+  border-radius: 15px;
+  display: inline-block;
+}
+.form .form__checkbox {
+  float: right;
+  border: #81F7F3;
+}
+.form .form__checkbox--lol {
+  float: right;
+  border: #81F7F3;
+  height: 200px;
+  width: 200px;
+}
+.form .form__label {
+  color: #FFFFFF;
+}
+.form .form__icon {
+  color: #000000;
+}
+
+/*# sourceMappingURL=custom.css.map */
