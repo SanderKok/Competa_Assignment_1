@@ -110,6 +110,23 @@ body {
     border-left: 0px;
     border-color: #000000;
   }
+
+  .submit__estimate {
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #81F7F3;
+    color: #0040FF;
+    border: 0px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .submit__estimate:hover {
+    -moz-box-shadow: 0 0 10px #000000;
+    -webkit-box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px #000000;
+  }
 }
 @media only screen and (min-width: 600px) {
   .form {
