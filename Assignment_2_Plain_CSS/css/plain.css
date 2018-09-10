@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
+}
+body {
+  font-family: Product Sans;
+}
+
+.body {
+  background-color: #81F7F3;
+  margin: 100px;
+}
+
+.inner {
+  background-color: #FFFFFF;
+  -moz-box-shadow: 0 0 10px #000000;
+  -webkit-box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 10px #000000;
+}
+.inner .inner__text {
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.nav {
+  background-color: #FFFFFF;
+}
+.nav .nav__ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.nav .nav__li {
+  display: inline-block;
+  color: #04B4AE;
+  float: right;
+}
+.nav .nav__li .nav__a {
+  display: block;
+  color: #81F7F3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav .nav__li--left {
+  float: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .form__checkbox {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .form {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .label {
+    text-align: center;
+  }
+
+  .estimate {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #000000;
+  }
+
+  .submit__estimate {
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #81F7F3;
+    color: #0040FF;
+    border: 0px;
+    text-align: center;
+  }
+  .submit__estimate:hover {
+    -moz-box-shadow: 0 0 10px #000000;
+    -webkit-box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px #000000;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .form__checkbox {
+    display: inline-block;
+    margin: 10px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .form {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .label {
+    text-align: center;
+  }
+
+  .estimate {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #000000;
+  }
+
+  .submit__estimate {
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #81F7F3;
+    color: #0040FF;
+    border: 0px;
+    text-align: center;
+  }
+  .submit__estimate:hover {
+    -moz-box-shadow: 0 0 10px #000000;
+    -webkit-box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px #000000;
+  }
+}
+
+/*# sourceMappingURL=plain.css.map */

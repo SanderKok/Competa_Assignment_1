@@ -1,0 +1,143 @@
+$black: #000000;
+$sky-blue: #81F7F3;
+$cyan: #04B4AE;
+$white: #FFFFFF;
+$dark-green: #4CAF50;
+$blue: #0040FF;
+
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
+}
+body {
+  font-family: Product Sans;
+}
+
+.body {
+  background-color: #81F7F3;
+  margin: 100px;
+}
+
+.inner {
+  .inner__text {
+    text-align: center;
+  	color: $black;
+  	font-weight: bold;
+  	margin: 15px;
+  }
+
+	background-color: $white;
+	-moz-box-shadow: 0 0 10px $black;
+	-webkit-box-shadow: 0 0 10px $black;
+	box-shadow: 0 0 10px $black;
+}
+
+.nav {
+  background-color: $white;
+  .nav__ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: $white;
+  }
+
+  .nav__li {
+  	display: inline-block;
+  	color: $cyan;
+  	float: right;
+  }
+
+  .nav__li .nav__a {
+    display: block;
+  	color: $sky-blue;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  }
+
+  .nav__li--left {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form__checkbox {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .form {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .label {
+    text-align: center;
+  }
+
+  .estimate {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: $black;
+  }
+
+  .submit__estimate {
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: $sky-blue;
+    color: $blue;
+    border: 0px;
+    text-align: center;
+    &:hover {
+      -moz-box-shadow: 0 0 10px $black;
+      -webkit-box-shadow: 0 0 10px $black;
+      box-shadow: 0 0 10px $black;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .form__checkbox {
+    display: inline-block;
+    margin: 10px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .form {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .label {
+    text-align: center;
+  }
+
+  .estimate {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: $black;
+  }
+
+  .submit__estimate {
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: $sky-blue;
+    color: $blue;
+    border: 0px;
+    text-align: center;
+    &:hover {
+      -moz-box-shadow: 0 0 10px $black;
+      -webkit-box-shadow: 0 0 10px $black;
+      box-shadow: 0 0 10px $black;
+    }
+  }
+}
