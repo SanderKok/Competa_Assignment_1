@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Slideshow</title>
+		<link type="text/css" href="css/javascript_slideshow.css" rel="stylesheet">
+	</head>
+	<body id="body">
+		<header class="header">
+			<div class="header__slideshow">
+			<br>
+			<br>
+			<img style="display: block;" class="header__slide" id="slide1" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350">
+			<img style="display: none;" class="header__slide" id="slide2" src="http://leanature.com/wp-content/uploads/2015/09/Slide_g%C3%A9n%C3%A9rique_Groupe.jpg">
+			<img style="display: none;" class="header__slide" id="slide3" src="https://www.quirkybyte.com/wp-content/uploads/2016/02/Green-Nature-Trees-l.jpg">
+		</header>
+			<center>
+				<button class="slideshow__button" onClick="prevSlide()" id="prev">⏪</button>
+				<button class="slideshow__button" id="pause">⏯</button>
+				<button class="slideshow__button" onClick="nextSlide()" id="next">⏩</button>
+				<br>
+				<div id="playing-or-paused"></div>
+			</center>
+			</div>
+			<h1 class="header__title">JavaScript Slideshow</h1>
+			<p class="header__description">This is a JavaScript slideshow.</p>
+		<script type="text/javascript" src="js/javascript_slideshow.js"></script>
+	</body>
+</html>
