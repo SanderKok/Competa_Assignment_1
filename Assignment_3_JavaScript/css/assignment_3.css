@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
+}
+body {
+  font-family: Product Sans;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .nav__searchbar {
+    background: url("images/glass.png");
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    font-family: Product Sans;
+    width: 75%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 12px;
+  }
+
+  img.nav__add {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-left: 2%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: [col1-start] 10% [col2-start] 40% [col3-start] 40% [col4-start] 10% [col4-end];
+    grid-template-rows: [row1-start] auto [col2-start] auto [col2-end];
+  }
+
+  .grid-item-header {
+    float: left;
+    grid-row-start: 1;
+    grid-row-end: 26;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .grid-item-picture {
+    float: left;
+    grid-column: 2/3;
+  }
+
+  .table__name {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .table__profile-picture {
+    height: 36px;
+    width: 36px;
+    margin-left: 20%;
+  }
+
+  .profile-name {
+    display: inline-block;
+  }
+
+  .profile-name span {
+    grid-column: 3/4;
+    text-align: center;
+  }
+
+  .profile-list {
+    display: inline-block;
+  }
+
+  .profile-picture img {
+    grid-column: 2/3;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .user-picture {
+    list-style: none;
+    grid-column: 1/5;
+  }
+
+  .profile-clicked {
+    height: 50vh;
+    width: 80vw;
+  }
+
+  .letter-navigation {
+    color: #5267ff;
+    float: right;
+    position: sticky;
+    top: 0;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+/*# sourceMappingURL=assignment_3.css.map */

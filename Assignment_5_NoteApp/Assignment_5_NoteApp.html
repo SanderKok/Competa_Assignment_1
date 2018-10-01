@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="css/Assignment_5_NoteApp.css" type="text/css">
+		<title>Assignment 5</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<i class="material-icons browse">folder</i>
+				<select class="select" onChange="sort()" id="sortOn">
+					<option class="option" value="date" selected><b>Auto</b></option>
+					<option class="option" disabled>== Sort on: ==</option>
+					<option class="option" value="date" id="sortDate">Creation date</option>
+					<option class="option" value="name" id="sortName">Name</option>
+				</select>
+				<i class="material-icons browse refresh" onClick="refreshPage()">refresh</i>
+				<i class="material-icons browse settings settings__submenu-parent" onClick="settingsMenu()">more_vert</i>
+				<ul class="settings__submenu" style="display: none;" id="settingsMenu">
+					<li class="settings__submenu-item"><i class="material-icons submenu-icon" id="removeIcon" onClick="deleteNote()">delete</i><span id="deleteList">Delete selected</span></li>
+					<li class="settings__submenu-item"><i class="material-icons submenu-icon" id="checkIcon" onClick="checkAll()">check_box_outline_blank</i><span id="selectList">Select all</span></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<br />
+			<br />
+			<div id="sideMenu" class="sidemenu">
+				<a href="javascript:void(0)" class="closebtn" onClick="closeAddMenu()">&times;</a>
+				<form>
+					<label class="note-label">Note Title:</label>
+					<br />
+					<input name="noteTitle" type="text" class="note-name" placeholder="Title of the note" id="noteTitle" required />
+					<br />
+					<br />
+					<label class="note-label">I want a notification of the note:</label>
+					<br />
+					<input type="checkbox" id="notification-checkbox" class="notification-checkbox" onClick="displayNotification()" />
+					<div id="notification-yes" class="notification-yes" style="display: none;">
+						<br />
+						<label class="note-label">Notification date:</label>
+						<br />
+						<input name="noteNotificationDate" type="date" class="note-name" placeholder="Notification date" id="noteNotificationDate" title="Notification date" />
+						<br />
+						<br />
+						<label class="note-label">Notification time:</label>
+						<br />
+						<input name="noteNotificationTime" type="time" class="note-name" placeholder="Time of notification" id="noteNotificationTime" max="23:59" min="00:00" title="Notification time" />
+					</div>
+					<br />
+					<button type="submit" class="submit-button" onClick="addNote()">Add note!</button>
+				</form>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="add-note">
+				<button id="addingButton" class="addingButton" onClick="openAddMenu()"><i class="material-icons light add-button">add_circle</i></button>
+			</div>
+		</footer>
+	<script src="js/Assignment_5_NoteApp.js" type="text/javascript"></script>
+	</body>
+</html>

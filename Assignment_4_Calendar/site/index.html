@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 4 | Calendar</title>
+		<link rel="shortcut icon" href="images/icon.png">
+		<link type="text/css" href="css/main.css" rel="stylesheet">
+	</head>
+	<body>
+		<br>
+		<br>
+		<br>
+		<div class="wrapper">
+			<br>
+			<br>
+			<main class="main">
+				<button id="authorize_button" style="display: none;">Authorize</button>
+				<button id="signout_button" style="display: none;">Sign Out</button>
+				
+				<div id="title" class="calendar__title">
+					<button  id="last-month" class="calendar__title left-arrow last-month">&lt;</button>
+					<button  id="next-month" class="calendar__title right-arrow next-month"> &gt; </button>
+						<span id="title__month" class="calendar__title"></span>
+						<span id="title__year" class="calendar__title"></span>
+					<button style="display: none;" onClick="lastYear()" id="last-year" class="calendar__title--year left-arrow">&lt;</button>
+					<button style="display: none;" onClick="nextYear()" id="next-year" class="calendar__title--year right-arrow"> &gt; </button>
+				</div>
+					<br>
+				<div id="calendar">
+					<table class="table" id="calTable">
+						<tbody class="table__body"></tbody>
+					</table>
+				</div>
+				
+				<pre id="content" class="google"></pre>
+				<div id="event" class="event">
+					<div id="event-adding" class="event-adding" style="display: none;">
+					<button id="event-button" class="event-button" onClick="eventsAddForm()">Add an event?</button>
+						<div id="add-event" class="add-event" style="display: none;">
+							<br />
+							<p class="add-event-date" id="dateOfEventP">Selected date: <span id="dateOfEventSpan"></span></p>
+							<br />
+							<input type="text" class="add-event-name" id="addEventName" placeholder="Event name.." />
+							<br />
+							<br />
+							<input type="text" class="add-event-desc" id="addEventDesc" placeholder="Event description.." />
+							<br />
+							<br />
+							<button id="add-button" type="submit" class="submit-button">Add!</button>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	<script src="js/google-api.js" type="text/javascript"></script>
+	<script async defer src="https://apis.google.com/js/api.js"
+		onload="this.onload=function(){};handleClientLoad()"
+		onreadystatechange="if (this.readyState === 'complete') this.onload()">
+	</script>
+	<script src="js/calendar.js?v=1.14"></script>
+	</body>
+</html>

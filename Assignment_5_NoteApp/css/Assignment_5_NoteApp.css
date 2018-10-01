@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2"); }
+body {
+  font-family: Product Sans;
+  margin: 0; }
+
+.header {
+  margin-top: 50px; }
+
+.nav {
+  background-color: white; }
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 3rem; }
+
+.browse {
+  font-size: 30px; }
+
+.add-button {
+  font-size: 75px;
+  color: blue;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: white;
+  border-radius: 100px;
+  border: 0px; }
+
+.addingButton {
+  float: right;
+  border: 0px;
+  background-color: transparent; }
+
+.select {
+  font-family: Product Sans;
+  width: 80%;
+  border: 0px;
+  font-size: 25px; }
+
+.note {
+  background-color: red;
+  border-radius: 5px;
+  width: 95%;
+  margin: 0 auto; }
+
+.title {
+  display: inline-block;
+  margin-left: 5%; }
+
+.date {
+  margin: 0;
+  margin-left: 5%;
+  line-height: 0px;
+  font-size: 20px; }
+
+.icon {
+  font-size: 15px;
+  float: left; }
+
+.notification {
+  font-size: 15px;
+  margin-left: 5%; }
+
+.hidden {
+  display: none; }
+
+/* SideMenu styles */
+.sidemenu {
+  font-family: Product Sans;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #BDBDBD;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+
+.sidemenu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.sidemenu a:hover {
+  color: #f1f1f1; }
+
+.sidemenu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+.note-name {
+  font-family: Product Sans;
+  font-size: 20px;
+  margin-left: 5%;
+  border: 0px;
+  background-color: transparent;
+  border-bottom: 2px solid;
+  width: 50%; }
+
+.note-label {
+  font-family: Product Sans;
+  font-size: 20px;
+  margin-left: 5%; }
+
+.notification-checkbox {
+  height: 20px;
+  width: 20px;
+  margin-left: 5%; }
+
+.submit-button {
+  font-family: Product Sans;
+  font-size: 15px;
+  margin-left: 5%; }
+
+.note-time {
+  font-family: Product Sans;
+  font-size: 20px;
+  background-color: transparent;
+  border: 0px; }
+
+.refresh {
+  cursor: pointer; }
+
+.settings {
+  cursor: pointer; }
+
+.settings__submenu {
+  list-style: none; }
+
+.settings__submenu-item {
+  display: inline-block;
+  margin-left: 70%; }
+
+.checkbox {
+  float: right;
+  display: none; }
+
+.submenu-icon {
+  cursor: pointer; }
+
+.recovery {
+  text-align: center; }
+
+.editIcon {
+  float: right;
+  margin: -1.5%;
+  margin-right: 0.3%;
+  cursor: pointer; }
+
+/*# sourceMappingURL=Assignment_5_NoteApp.css.map */

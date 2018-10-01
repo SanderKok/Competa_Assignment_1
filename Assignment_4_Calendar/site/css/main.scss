@@ -1,0 +1,77 @@
+$white: #FFFFFF;
+$black: #000000;
+
+@font-face {
+	font-family: 'Product Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+body {
+	font-family: Product Sans;
+	background: #4776e6;
+	background: -webkit-linear-gradient(to bottom, #4776e6, #8e54e9);
+	background: linear-gradient(to bottom, #4776e6, #8e54e9);
+	height: 100vh;
+	overflow: hidden;
+}
+
+.wrapper {
+	height: 85%;
+	width: 80%;
+	border-radius: 3px;
+	margin: 0 auto;
+	background-color: $white;
+	-moz-box-shadow: 0 0 20px $black;
+	-webkit-box-shadow: 0 0 20px $black;
+	box-shadow: 0 0 20px $black;
+}
+
+.main {
+	margin-left: 10%;
+	height: 85%;
+	width: 80%;
+}
+
+.calendar__title {
+	text-align: center;
+}
+
+.left-arrow {
+	background-color: transparent;
+	border: 0px;
+	font-weight: bold;
+}
+
+.right-arrow {
+	background-color: transparent;
+	border: 0px;
+	font-weight: bold;
+}
+
+.table {
+	margin: 0 auto;
+	border: solid 2px;
+}
+
+.days {
+	text-align: center;
+	padding: 19px;
+	cursor: pointer;
+}
+
+.active {
+	color: white;
+	background-color: grey;
+	border-radius: 50px;
+	border: 0px;
+}
+
+.google {
+	font-size: 20px;
+}
+
+.calendar__title--year {
+	display: none;
+}
