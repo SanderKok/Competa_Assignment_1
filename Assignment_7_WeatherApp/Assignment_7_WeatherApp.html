@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/Assignment_7_WeatherApp.css" type="text/css">
+	<link rel="shortcut icon" href="css/images/favicon.png" />
+	<title>Assignment 7</title>
+</head>
+<body id="body">
+	<br />
+	<br />
+	<br />
+	<br />
+	<main class="main">
+		<div class="weather-box" id="firstWeatherBox">
+			<div class="image">
+				<img id="firstCountryImage" class="the-image" />
+			</div>
+			<h1 class="title" id="firstWeatherTitle"></h1>
+			<p class="date" id="firstWeatherDate"></p>
+			<img id="firstWeatherIcon" class="icon">
+			<div class="center">
+				<p class="random-warmth" id="firstRandomWarmth1"></p>
+				<h1 id="firstWeatherWarmth" class="warmth"></h1>
+				<p class="random-warmth--right" id="firstRandomWarmth2"></p>
+			</div>
+		</div>
+		<div class="weather-box-second">
+			<div class="image">
+				<img id="secondCountryImage" class="the-image-second" />
+			</div>
+			<input class="title-second input" id="secondWeatherTitle" placeholder="Name of your city.." onChange="searchedLocation()" />
+			<p class="date" id="secondWeatherDate"></p>
+			<img id="secondWeatherIcon" class="icon">
+			<div class="center">
+				<p class="random-warmth" id="secondRandomWarmth1"></p>
+				<h1 id="secondWeatherWarmth" class="warmth"></h1>
+				<p class="random-warmth--right" id="secondRandomWarmth2"></p>
+			</div>
+		</div>
+	</main>
+<script src="js/Assignment_7_WeatherApp.js"></script>
+</body>
+</html>

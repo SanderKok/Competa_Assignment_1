@@ -1,0 +1,114 @@
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica,Arial,sans-serif;
+  background-color: #04B4AE; }
+
+.main {
+  margin: 0 auto;
+  margin-left: 15%;
+  top: 25%; }
+
+.weather-box {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  width: 30%;
+  float: left;
+  height: 750px;
+  -moz-box-shadow: 0 0 40px #FFFFFF;
+  -webkit-box-shadow: 0 0 40px #FFFFFF;
+  box-shadow: 0 0 40px #FFFFFF; }
+
+.weather-box-second {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  width: 30%;
+  margin-left: 50%;
+  height: 750px;
+  -moz-box-shadow: 0 0 40px #FFFFFF;
+  -webkit-box-shadow: 0 0 40px #FFFFFF;
+  box-shadow: 0 0 40px #FFFFFF; }
+
+.title {
+  text-align: center;
+  padding-top: 400px; }
+
+.date {
+  text-align: center; }
+
+.icon {
+  margin: 0 auto;
+  display: block;
+  height: 100px;
+  width: 100px;
+  border: 0px; }
+
+.warmth {
+  text-align: center;
+  display: inline; }
+
+.random-warmth {
+  display: inline;
+  margin: 0 auto;
+  margin-right: 10%; }
+
+.random-warmth--right {
+  display: inline;
+  margin-left: 10%; }
+
+.center {
+  text-align: center;
+  top: 10%; }
+
+.date {
+  font-weight: bold; }
+
+.image {
+  display: flex;
+  justify-content: center; }
+
+.the-image {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  height: 25%;
+  width: 20%;
+  max-height: 170px;
+  max-width: 255px; }
+
+.the-image-second {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  height: 25%;
+  width: 20%;
+  max-height: 170px;
+  max-width: 255px; }
+
+.hidden {
+  display: none; }
+
+.title-second {
+  text-align: center;
+  padding-top: 400px; }
+
+.input {
+  border: 0px;
+  border-bottom: 2px solid #000000;
+  font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica,Arial,sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  outline: none; }
+
+.input::placeholder {
+  font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica,Arial,sans-serif;
+  font-weight: bold; }
+
+/*# sourceMappingURL=Assignment_7_WeatherApp.css.map */
