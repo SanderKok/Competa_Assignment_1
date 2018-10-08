@@ -1,32 +1,67 @@
-function createNode(element){
-	return document.createElement(element);
-}
-
-function append(parent, el) {
-	return parent.appendChild(el);
-}
-
 function requirements() {
-	const requirementsDiv = document.getElementById("requirements");
 	const firstPassword = document.getElementById("password1");
 	const secondPassword = document.getElementById("password2");
+
+	// Here will display 1 of the errors in
+	const errorMessage = document.getElementById("errorMessage");
+
+	// Check on this colors
+	const goodColor = "rgb(4, 180, 4)";
+	const badColor = "rgb(255, 0, 0)";
+
+	// All elements that must be green
+	const characters = document.getElementById("characters");
+	const specialCharacters = document.getElementById("specialCharacters");
+	const numbers = document.getElementById("numbers");
+	const upperCase = document.getElementById("upperCase");
+	const lowerCase = document.getElementById("lowerCase");
 
 	if (firstPassword.value !== "") {
 		if (secondPassword.value !== "") {
 			if (firstPassword.value === secondPassword.value) {
-				console.log("Restriction 1: Passwords are matching");
+				if (characters.style.color === goodColor) {
+					// Check if amount of characters are good
+					if (specialCharacters.style.color = goodColor) {
+						// Check if amount of special characters are good
+						if (numbers.style.color === goodColor) {
+							// Check if amount of numbers are good
+							if (upperCase.style.color === goodColor) {
+								// Check if amount of uppercase characters are good
+								if (lowerCase.style.color === goodColor) {
+									errorMessage.innerHTML = "Password verified.";
+									errorMessage.style.color = goodColor;
+								} else {
+									errorMessage.innerHTML = "Not enough lowercase characters.";
+									errorMessage.style.color = badColor;
+								}
+							} else {
+								errorMessage.innerHTML = "Not enough uppercase characters.";
+								errorMessage.style.color = badColor;
+							}
+						} else {
+							errorMessage.innerHTML = "Not enough numbers.";
+							errorMessage.style.color = badColor;
+						}
+					} else {
+						errorMessage.innerHTML = "Not enough special characters.";
+						errorMessage.style.color = badColor;
+					}
+				} else {
+					errorMessage.innerHTML = "Not enough characters.";
+					errorMessage.style.color = badColor;
+				}
 			} else {
-				console.log("Restriction 1: Passwords are not matching");
+				errorMessage.innerHTML = "Passwords are not matching.";
+				errorMessage.style.color = badColor;
 			}
 		} else {
-			// Second password is empty
-			alert("Fill in every field please.");
+			errorMessage.innerHTML = "Fill in every field please.";
+			errorMessage.style.color = badColor;
 		}
 	} else {
-		// First password is empty
-		alert("Fill in every field please.");
+		errorMessage.innerHTML = "Fill in every field please.";
+		errorMessage.style.color = badColor;
 	}
-	
 }
 
 const inputField = document.getElementById("password1");
@@ -48,7 +83,7 @@ inputField.onkeyup = function() {
 	const lowerCaseList = /[a-z]/g; // Lower case letters a - z
 
 	// Checks for characters
-	if(inputField.value.length != null){
+	if(inputField.value.length !== null){
 		if (inputField.value.length >= minAmountOfCharacters) {
 			characters.style.color = "#04B404";
 		} else {
