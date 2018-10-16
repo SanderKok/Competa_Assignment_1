@@ -66,8 +66,12 @@ function updateDate() {
 
 // For the weather of your own location
 function myPosition (position){
+	// API Key build-up
+	const MY_KEY = config.MY_KEY;
+	const SECRET_KEY = config.SECRET_KEY;
+	const KEY_2 = config.KEY_2;
 	// API Key for Weather thingy
-	const apiKey = "67767d82a6918525b2d069f7cc54c57b";
+	const apiKey = MY_KEY + SECRET_KEY + KEY_2;
 	
 	const firstCountryImage = document.getElementById("firstCountryImage");
 	const firstWeatherTitle = document.getElementById("firstWeatherTitle");

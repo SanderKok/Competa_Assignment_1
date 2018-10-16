@@ -5,10 +5,6 @@ function requirements() {
 	// Here will display 1 of the errors in
 	const errorMessage = document.getElementById("errorMessage");
 
-	// Check on this colors
-	const goodColor = "rgb(4, 180, 4)";
-	const badColor = "rgb(255, 0, 0)";
-
 	// All elements that must be green
 	const characters = document.getElementById("characters");
 	const specialCharacters = document.getElementById("specialCharacters");
@@ -16,51 +12,34 @@ function requirements() {
 	const upperCase = document.getElementById("upperCase");
 	const lowerCase = document.getElementById("lowerCase");
 
-	if (firstPassword.value !== "") {
-		if (secondPassword.value !== "") {
-			if (firstPassword.value === secondPassword.value) {
-				if (characters.style.color === goodColor) {
-					// Check if amount of characters are good
-					if (specialCharacters.style.color = goodColor) {
-						// Check if amount of special characters are good
-						if (numbers.style.color === goodColor) {
-							// Check if amount of numbers are good
-							if (upperCase.style.color === goodColor) {
-								// Check if amount of uppercase characters are good
-								if (lowerCase.style.color === goodColor) {
-									errorMessage.innerHTML = "Password verified.";
-									errorMessage.style.color = goodColor;
-								} else {
-									errorMessage.innerHTML = "Not enough lowercase characters.";
-									errorMessage.style.color = badColor;
-								}
-							} else {
-								errorMessage.innerHTML = "Not enough uppercase characters.";
-								errorMessage.style.color = badColor;
-							}
-						} else {
-							errorMessage.innerHTML = "Not enough numbers.";
-							errorMessage.style.color = badColor;
-						}
-					} else {
-						errorMessage.innerHTML = "Not enough special characters.";
-						errorMessage.style.color = badColor;
-					}
-				} else {
-					errorMessage.innerHTML = "Not enough characters.";
-					errorMessage.style.color = badColor;
-				}
+	// Check if fields are not empty
+	if (firstPassword.value !== "" && secondPassword.value !== "") {
+
+		// Check if passwords are similar
+		if (firstPassword.value === secondPassword.value) {
+
+			// Check if everything is good
+			if (characters.classList.contains("restrictionListItemGood") && specialCharacters.classList.contains("restrictionListItemGood") && numbers.classList.contains("restrictionListItemGood") && upperCase.classList.contains("restrictionListItemGood")&& lowerCase.classList.contains("restrictionListItemGood")) {
+				errorMessage.innerHTML = "Password verified.";
+				errorMessage.classList.add("restrictionListItemGood");
+				errorMessage.classList.remove("restrictionListItem");
 			} else {
-				errorMessage.innerHTML = "Passwords are not matching.";
-				errorMessage.style.color = badColor;
+				// Not everything is good
+				errorMessage.innerHTML = "Something is wrong with the password.";
+				errorMessage.classList.remove("restrictionListItemGood");
+				errorMessage.classList.add("restrictionListItem");
 			}
 		} else {
-			errorMessage.innerHTML = "Fill in every field please.";
-			errorMessage.style.color = badColor;
+			// Passwords are not matching
+			errorMessage.innerHTML = "Passwords are not matching.";
+			errorMessage.classList.remove("restrictionListItemGood");
+			errorMessage.classList.add("restrictionListItem");
 		}
 	} else {
+		// Not every field is filled in
 		errorMessage.innerHTML = "Fill in every field please.";
-		errorMessage.style.color = badColor;
+		errorMessage.classList.remove("restrictionListItemGood");
+		errorMessage.classList.add("restrictionListItem");
 	}
 }
 
@@ -85,53 +64,67 @@ inputField.onkeyup = function() {
 	// Checks for characters
 	if(inputField.value.length !== null){
 		if (inputField.value.length >= minAmountOfCharacters) {
-			characters.style.color = "#04B404";
+			characters.classList.add("restrictionListItemGood");
+			errorMessage.classList.remove("restrictionListItem");
 		} else {
-			characters.style.color = "#FF0000";
+			characters.classList.remove("restrictionListItemGood");
+			errorMessage.classList.add("restrictionListItem");
 		}
 	}
 	
 	// Check for special characters
 	if (inputField.value.match(specialCharactersList)) {
 		if (inputField.value.match(specialCharactersList).length >= minAmountOfSpecialCharacters) {
-			specialCharacters.style.color = "#04B404";
+			specialCharacters.classList.add("restrictionListItemGood");
+			errorMessage.classList.remove("restrictionListItem");
 		} else {
-			specialCharacters.style.color = "#FF0000";
+			specialCharacters.classList.remove("restrictionListItemGood");
+			errorMessage.classList.add("restrictionListItem");
 		}
 	} else {
-		specialCharacters.style.color = "#FF0000";
+		specialCharacters.classList.remove("restrictionListItemGood");
+		errorMessage.classList.add("restrictionListItem");
 	}
 	
 	// Check for uppercase letters
 	if (inputField.value.match(upperCaseList)) {
 		if (inputField.value.match(upperCaseList).length >= minAmountOfUpperCaseLetters) {
-			upperCase.style.color = "#04B404";
+			upperCase.classList.add("restrictionListItemGood");
+			errorMessage.classList.remove("restrictionListItem");
 		} else {
-			upperCase.style.color = "#FF0000";
+			upperCase.classList.remove("restrictionListItemGood");
+			errorMessage.classList.add("restrictionListItem");
 		}
 	} else {
-		upperCase.style.color = "#FF0000";
+		upperCase.classList.remove("restrictionListItemGood");
+		errorMessage.classList.add("restrictionListItem");
 	}
 	
 	// Check for lowercase letters
 	if (inputField.value.match(lowerCaseList)) {
 		if (inputField.value.match(lowerCaseList).length >= minAmountOfLowerCaseLetters) {
-			lowerCase.style.color = "#04B404";
+			lowerCase.classList.add("restrictionListItemGood");
+			errorMessage.classList.remove("restrictionListItem");
 		} else {
-			lowerCase.style.color = "#FF0000";
+			lowerCase.classList.remove("restrictionListItemGood");
+			errorMessage.classList.add("restrictionListItem");
 		}
 	} else {
-		lowerCase.style.color = "#FF0000";
+		lowerCase.classList.remove("restrictionListItemGood");
+		errorMessage.classList.add("restrictionListItem");
 	}
 	
 	// Checks for numbers
 	if (!inputField.value.match(numbersList)) {
-		numbers.style.color = "#FF0000";
+		numbers.classList.remove("restrictionListItemGood");
+		errorMessage.classList.add("restrictionListItem");
 	} else {
 		if (inputField.value.match(numbersList).length >= minAmountOfNumbers){
-			numbers.style.color = "#04B404";
+			numbers.classList.add("restrictionListItemGood");
+			errorMessage.classList.remove("restrictionListItem");
 		} else {
-			numbers.style.color = "#FF0000";
+			numbers.classList.remove("restrictionListItemGood");
+			errorMessage.classList.add("restrictionListItem");
 		}
 	}
 }
