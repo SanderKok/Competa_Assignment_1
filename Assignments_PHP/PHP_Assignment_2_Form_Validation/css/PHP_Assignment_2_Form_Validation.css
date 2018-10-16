@@ -1,0 +1,79 @@
+body {
+  font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica,Arial,sans-serif;
+  background-color: darkslategray; }
+
+.main {
+  background-color: white;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+  border-radius: 25px; }
+
+.nav {
+  display: inline-block;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-radius: 15px; }
+
+.nav__list {
+  list-style: none; }
+
+.list__item {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer; }
+
+.list__item--right {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  float: right; }
+
+.hr {
+  width: 80%; }
+
+.hidden {
+  display: none; }
+
+.input {
+  border: 0px;
+  border-bottom: 2px #000000 solid;
+  font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  width: 23%; }
+
+.input::placeholder {
+  font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica,Arial,sans-serif; }
+
+.submit {
+  height: 30px;
+  font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica,Arial,sans-serif;
+  width: 100px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #000000;
+  font-weight: bold;
+  border: 3px darkslategray solid; }
+
+#table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 10%; }
+  #table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left; }
+  #table tr:nth-child(even) {
+    background-color: #f2f2f2; }
+  #table tr:hover {
+    background-color: #ddd; }
+  #table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkslategray;
+    color: white; }
+
+/*# sourceMappingURL=PHP_Assignment_2_Form_Validation.css.map */
