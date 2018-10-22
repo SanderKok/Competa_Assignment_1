@@ -1,0 +1,98 @@
+body,h1 {
+	font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica,Arial,sans-serif !important;
+}
+body, html {
+	height: 100%;
+}
+.bgimg {
+	background-image: url('../bg.jpg');
+	min-height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.logo {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+}
+
+/* The side navigation menu */
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.nav {
+	font-size:30px;
+	cursor:pointer;
+	float: right;
+	color: white;
+	padding: 15px;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.sidenav .sidenavtitle {
+	color: white;
+}
+
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+.hidden {
+	display: none !important;
+}
+
+.parent-list {
+	cursor: pointer;
+}
+
+.hr-sidenav {
+	width: 50%;
+	padding: 8px 8px 8px 32px;
+	border-color: #818181;
+	margin: 12.5%;
+}
+
+.sublist-assignment-2 {
+	transition: 0.3s;
+}

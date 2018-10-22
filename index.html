@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html>
-<title>Assignments</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-	background-image: url('./bg.jpg');
-	min-height: 100%;
-	background-position: center;
-	background-size: cover;
-}
-</style>
-<body>
-
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-	<div class="w3-display-topleft w3-padding-large w3-xlarge">Logo</div>
-	<div class="w3-display-middle">
-		<h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-		<hr class="w3-border-grey" style="margin:auto;width:40%">
-		<p class="w3-large w3-center">Lmao</p>
+	<head>
+		<title>Assignments</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="index_css/styling.css" type="text/css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+	<body>
+	<nav id="theSidenav" class="sidenav">
+		<img class="logo" src="logo.png" /><span class="sidenavtitle">Competa IT</span>
+		<a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+		<a href="./assignment_1.html">Assignment 1</a>
+		<a onClick="displayAssignment2()" class="parent-list">Assignment 2 <i class="fas fa-angle-down"></i></a>
+			<a href="./Assignment_2_CSS_Grid/Assignment_2_CSS_Grid.html" class="sublist-assignment-2 hidden">CSS Grid</a>
+			<a href="./Assignment_2_FlexBox/Assignment_2_Flexbox.html" class="sublist-assignment-2 hidden">Flexbox</a>
+			<a href="./Assignment_2_Plain_CSS/Assignment_2_Plain_CSS.html" class="sublist-assignment-2 hidden">Plain CSS</a>
+		<a class="sublist-assignment-2 hidden parent-list" onClick="hideAssignment2()">Close <i class="fas fa-angle-up"></i></a>
+		<hr class="sublist-assignment-2 hidden hr-sidenav" />
+		<a href="./Assignment_3_JavaScript/assignment_3.html">Assignment 3</a>
+		<a href="./Assignment_4_Calendar/index.html">Assignment 4</a>
+		<a href="./Assignment_5_NoteApp/Assignment_5_NoteApp.html">Assignment 5</a>
+		<a href="./Assignment_6_Password_Checker/Assignment_6_Password_Checker.html">Assignment 6</a>
+		<a href="./Assignment_7_WeatherApp/Assignment_7_WeatherApp.html">Assignment 7</a>
+		<a onClick="displayPHP()" class="parent-list">PHP <i class="fas fa-angle-down"></i></a>
+			<a href="#" class="sublist-php hidden">Data Transfer</a>
+			<a href="#" class="sublist-php hidden">Form Validation</a>
+			<a href="#" class="sublist-php hidden">YouTube</a>
+			<a href="#" class="sublist-php hidden">#</a>
+			<a href="#" class="sublist-php hidden">#</a>
+		<a class="sublist-php hidden parent-list" onClick="hidePHP()">Close <i class="fas fa-angle-up"></i></a>
+		<hr class="sublist-php hidden hr-sidenav" />
+	</nav>
+	<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+		<i class="fas fa-ellipsis-v nav" onClick="openNav()"></i>
+		<div class="w3-display-topleft w3-padding-large w3-xlarge"><img class="logo" src="logo.png" /></div>
+		<div class="w3-display-middle">
+			<h1 class="w3-jumbo w3-animate-top title">Assignments</h1>
+			<hr class="w3-border-grey" style="margin:auto;width:40%">
+			<p class="w3-large w3-center">By: Sander Kok</p>
+		</div>
 	</div>
-</div>
-</body>
+	<script src="index_js/index.js"></script>
+	</body>
 </html>
