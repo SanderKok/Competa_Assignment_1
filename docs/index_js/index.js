@@ -35,3 +35,17 @@ function hidePHP() {
 		ASSIGNMENT_2_SUBNAV_ITEMS.classList.add("hidden");
 	}
 }
+
+function displayJS() {
+	for (let index = 0; index < 4; index++) {
+		const ASSIGNMENT_2_SUBNAV_ITEMS = document.getElementsByClassName("sublist-js")[index];
+		ASSIGNMENT_2_SUBNAV_ITEMS.classList.remove("hidden");
+	}
+}
+
+function hideJS() {
+	for (let index = 0; index < 4; index++) {
+		const ASSIGNMENT_2_SUBNAV_ITEMS = document.getElementsByClassName("sublist-js")[index];
+		ASSIGNMENT_2_SUBNAV_ITEMS.classList.add("hidden");
+	}
+}
